@@ -13,7 +13,7 @@ from sqlalchemy import func
 #from .models import UserAccounts
 
 import smtplib
-import pandas as pd 
+#import pandas as pd 
 from email.mime.multipart import MIMEMultipart 
 from email.mime.text import MIMEText 
 from email.mime.base import MIMEBase 
