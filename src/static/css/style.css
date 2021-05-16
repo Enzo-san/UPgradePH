@@ -863,3 +863,9 @@ p strong {
 .confirm-msg img {
   height: 120px;
 }
+
+.confirm-page{
+  background: #2D325A;
+  height: 100vh;
+  margin-top: 0;
+}
