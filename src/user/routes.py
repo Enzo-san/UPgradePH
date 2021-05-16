@@ -181,7 +181,7 @@ def sendPaymentDetails(name, email, payment_method, promo_code, package, amount_
     body = "Dear " + name + ", \n\n\n \
 	Thank you for choosing to kickstart your college journey with us! In order to officially reserve your slot, please pay Php " + str(amount_to_pay) + " to either our official bank account or Gcash account. \n \
 	The account details are listed below. \n\n \
-	\tBank account \n \
+	\tBank account (UnionBank) \n \
 	\t\t Account number: 0001 3001 9756 \n \
 	\t\t Account name: UPGRADEPH TUTORIAL SERVICES \n\n \
 	\tGcash account \n \

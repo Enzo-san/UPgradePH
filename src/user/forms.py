@@ -51,7 +51,7 @@ class RegisterFormPage3(FlaskForm):
                                                 ('Introductory Physics 1-on-1','Introductory Physics 1-on-1'), 
                                                 ('Introductory Physics 1-on-3','Introductory Physics 1-on-3'), 
                                                 ('Introductory Physics 1-on-5','Introductory Physics 1-on-5')
-                                                ]]
+                                                ]
                          )
     barkada_name = StringField('Name of Other People Included in Barkada', validators=[Length(min=4, max=180)], render_kw={"placeholder": "Ex. Juan C. dela Cruz, Maria C. dela Cruz, Juana C. dela Cruz"})
     schedule = SelectField('Incoming Grade Level', choices=[
