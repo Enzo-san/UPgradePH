@@ -162,9 +162,13 @@ def register3():
 			amount_to_pay -= 500
 
 		sendPaymentDetails(session['name'], session['email'], session['payment_method'], session['promo_code'], session['package'], amount_to_pay)
-		return redirect(url_for('upgrade_blueprint.index'))
+		return redirect(url_for('upgrade_blueprint.register_success'))
 	
 	return render_template('reg-step3.html', form=form, promo_codes=promo_codes)
+
+@upgrade_blueprint.route('/Register-Sucess')
+def register_success():
+	return render_template('register-success.html')
 
 
 def sendPaymentDetails(name, email, payment_method, promo_code, package, amount_to_pay):

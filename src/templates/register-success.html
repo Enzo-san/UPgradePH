@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {% block register_success %}
+<main class="confirm-page d-flex align-items-center justify-content-center">
+    <section class="confirm-msg ml-3 mr-3">
+        <div class="row">
+            <div class="col text-center text-md-left">
+                <div>
+                    <div><img src="{{ url_for('static', filename='img/upgrade-logo-full.png') }}" alt="UPgrade"></div><span class="banner-subtitle"><strong>Thank you for choosing to study with us!&nbsp;</strong></span>
+                </div>
+            </div>
+            <div class="col text-center">
+                <p class="banner-tagline" style="padding: 16px 0px 0px;margin: 0px;"><br>We have sent our payment details to you via e-mail. If you did not receive any, please e-mail us at admin@upgradetutorials.ph or message our facebook page UPgrade College Prep Tutorials.<br></p><a href="http://www.facebook.com/UPgradeTutorialsPH" target="_blank"><i class="fa fa-facebook-square text-white" style="font-size: 60px;"></i></a>
+                <p class="banner-desc mt-3">Again, thank you and we look forward to studying with you!<br></p><a class="btn home-btn" role="button" href="/">Back to Home</a>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
