@@ -1,0 +1,76 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "layout.html" %} {% block register3 %}
+
+<main class="register-page">
+    <section class="register content-block">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="container reg-container">
+                    <form method="post" action="/Register3">
+                        {{ form.csrf_token }}
+	                    {{ form.hidden_tag() }}
+                        <div class="d-flex justify-content-center"><a class="register-upgrade-logo" href="index.html"></a></div>
+                        <h4 class="text-center form-heading">Registration</h4>
+                        <div class="d-flex justify-content-between"><span class="form-sub-head"><strong>Package Details</strong><br></span><span class="form-sub-head">Step 3 of 3</span></div>
+                        <div class="form-group"><label for="package">Package</label>
+                                <!-- <option value="#" selected="" disabled="">Select package type</option>
+                                <option value="#">Basic Accounting 1-on-1</option>
+                                <option value="#">Basic Accounting 1-on-3</option>
+                                <option value="#">Basic Accounting 1-on-5</option>
+                                <option value="#">Precalculus 1-on-1</option>
+                                <option value="#">Precalculus 1-on-3</option>
+                                <option value="#">Precalculus 1-on-5</option>
+                                <option value="#">Differential Calculus 1-on-1</option>
+                                <option value="#">Differential Calculus 1-on-3</option>
+                                <option value="#">Differential Calculus 1-on-5</option>
+                                <option value="#">Introductory Physics 1-on-1</option>
+                                <option value="#">Introductory Physics 1-on-3</option>
+                                <option value="#">Introductory Physics 1-on-5</option> -->
+                                {{form.package(class="form-control")}}
+                            <p class="form-notice">If you want to enroll in a group package but do not have a complete barkada yet, type 'No barkada yet' in the next item. We will help you find a barkada.<br></p>
+                        </div>
+                        <div class="form-group">{{ wtf.form_field(form.barkada_name) }}
+                            <p class="form-notice">If your package is one-on-one, simply skip this item.&nbsp;</p>
+                        </div>
+                        <div class="form-group">
+                                <!-- <option value="#" selected="" disabled="">Select a schedule</option>
+                                <option value="#">MWF 8:00 am - 10:00 am</option>
+                                <option value="#">MWF 10:00 am - 12:00 nn</option>
+                                <option value="#">MWF 1:00 pm - 3:00 pm</option>
+                                <option value="#">MWF 3:00 pm - 5:00 pm</option>
+                                <option value="#">TThS 8:00 am - 10:00 am</option>
+                                <option value="#">TThS 10:00 am - 12:00 nn</option>
+                                <option value="#">TThS 1:00 pm - 3:00 pm</option>
+                                <option value="#">TThS 3:00 pm - 5:00 pm</option> -->
+                                {{form.schedule(class="form-control")}}
+                            <p class="form-notice">We will consider your preferred schedule. However, please be informed that your preferred schedule might not be assigned to you. If you have any concerns, please input them in the “Other Concerns?” item below.<br></p>
+                        </div>
+                        <div class="form-group"><label for="payment">Preferred Payment Method</label>
+                                <!-- <option value="#" selected="" disabled="">Select payment method</option>
+                                <option value="#">GCash</option>
+                                <option value="#">Bank Transfer</option> -->
+                                {{form.payment_method(class="form-control")}}
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">{{ wtf.form_field(form.promo_code) }}
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    {{wtf.form_field(form.internet_speed)}}
+                                <p class="form-notice">To better serve you, we would like to know the strength of your internet connection.<br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">{{ wtf.form_field(form.concerns) }}
+                        <div class="form-group"><button class="btn btn-dark btn-block" type="submit" style="font-family: 'Alte Haas Grotesk';">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% endblock %}

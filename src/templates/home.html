@@ -1,0 +1,339 @@
+
+
+{% extends "layout.html" %} 
+
+{% block home %}
+
+    <main class="landing-page">
+        <section class="banner-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div>
+                            <div class="d-flex align-items-end">
+                                <h1><img class="banner-logo" src="{{ url_for('static', filename='img/upgrade-logo-full.png') }}" alt="UPgrade"><span class="banner-subtitle">College Preparation Tutorials</span></h1>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 text-center">
+                        <p class="banner-desc"><br>Register to get better grades in college and eliminate the risk of failing and getting delayed<br><br>Limited slots only! To maintain the quality of our tutorials, we limit our tutor-to-tutee ratio<br></p>
+                        <p class="banner-tagline">Kickstart Your College Journey With Us!<br></p><a class="btn register-btn" role="button" href="/Register">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <section class="programs-bg section-clean">
+            <div class="container">
+                <div class="intro"><span>Programs</span></div>
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Basic Accounting</h4>
+                                    <hr>
+                                    <h6 class="card-subtitle mb-2 font-weight-bold">Equivalent Courses</h6>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between"><span class="float-left">UP</span><span class="float-right">BA 99.1<br></span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">DLSU</span><span class="text-right float-right">FDNACC<br>ACCBFAR<br>ACCCOB1</span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">ADMU</span><span class="float-right">ACCT 113<br></span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">UST</span><span class="float-right">CA 5101<br></span></div>
+                                    </div>
+                                    <div class="text-center"><span class="hours">45</span><span style="position: relative;top: -15px;"><br>hours</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Precalculus</h4>
+                                    <hr>
+                                    <h6 class="card-subtitle mb-2 font-weight-bold">Equivalent Courses</h6>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between"><span class="float-left">UP</span><span class="float-right">Math 20<br></span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">DLSU</span><span class="text-right float-right">COMALGE<br>FNDMATH<br></span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">ADMU</span><span class="float-right">Math 2<br></span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">UST</span><span class="float-right">(N/A)<br><br></span></div>
+                                    </div>
+                                    <div class="text-center"><span class="hours">45</span><span style="position: relative;top: -15px;"><br>hours</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Differential<br>Calculus</h4>
+                                    <hr>
+                                    <h6 class="card-subtitle mb-2 font-weight-bold">Equivalent Courses</h6>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between"><span class="float-left">UP</span><span class="float-right">Math 21<br></span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">DLSU</span><span class="text-right float-right">CALENG1<br></span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">ADMU</span><span class="float-right">Math 31.1<br></span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">UST</span><span class="float-right">ENG203<br><br><br></span></div>
+                                    </div>
+                                    <div class="text-center"><span class="hours">45</span><span style="position: relative;top: -15px;"><br>hours</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Introductory Physics</h4>
+                                    <hr>
+                                    <h6 class="card-subtitle mb-2 font-weight-bold">Equivalent Courses</h6>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between"><span class="float-left">UP</span><span class="float-right">Physics 71<br></span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">DLSU</span><span class="text-right float-right">ASPHYS<br></span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">ADMU</span><span class="float-right">PHYS 20.01<br></span></div>
+                                        <hr class="course-divider">
+                                        <div class="d-flex justify-content-between"><span class="float-left">UST</span><span class="float-right">ENG207A<br><br><br></span></div>
+                                    </div>
+                                    <div class="text-center"><span class="hours">50</span><span style="position: relative;top: -15px;"><br>hours</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center"><span class="program-notice">All programs start on June 21, 2021</span></div>
+            </div>
+        </section>
+        <section class="section-clean skills tutors-bg">
+            <div class="container">
+                <div class="intro"><span>Who we are</span></div>
+                <div class="row mt-2">
+                    <div class="col-lg-4 col-xl-3">
+                        <div>
+                            <h1 class="text-left">Our Goal</h1>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p>We get you ready for college, help you reach your target grades, and remove the risk of getting delayed. Our tutors are handpicked by us and we make sure that you are taught only by the best. Quality is our priority and that is why slots are limited. We see to it that you get ahead in school even before the academic year starts.<br></p>
+                    </div>
+                </div>
+                <h1>Head tutors</h1>
+                <div class="row pt-5 pb-5" id="tutor1">
+                    <div class="col-md-4 col-xl-3">
+                        <div class="text-center"><img class="tutor-img" src="{{ url_for('static', filename='img/tutors/head/Guingcangco.jpg') }}">
+                            <h5 class="tutor-name text-center"><strong>Chris Guingcangco, CPA</strong><br></h5>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-8 col-xl-9">
+                        <div></div>
+                        <ul class="pt-4">
+                            <li>De La Salle University BS Accountancy Batch 2016 Rank 1<br></li>
+                            <li>CPA Board Exams 2017 Rank 11 (with a general average of 88%)<br></li>
+                            <li>Works as an Accounting Consultant<br></li>
+                            <li>CFA Level 1 Passer<br></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row pb-5" id="tutor-1">
+                    <div class="col-md-4 col-xl-3">
+                        <div class="text-center"><img class="tutor-img" src="{{ url_for('static', filename='img/tutors/head/Lopez.jpg') }}">
+                            <h5 class="tutor-name text-center"><strong>Neil Jason Lopez, CPA</strong><br></h5>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-8 col-xl-9">
+                        <div></div>
+                        <ul class="pt-4">
+                            <li>University of the Philippines Diliman BS Business Administration and Accountancy Batch 2019 Cum Laude<br></li>
+                            <li>CPA Board Exams 2019 Passer&nbsp;<br>Works as a Reviewer at Pinnacle CPA Review School<br></li>
+                            <li>Works as an Accounting Instructor at Ateneo de Manila University<br></li>
+                            <li>Works as an Accounting Staff at Dezign Works Phils Inc.&nbsp;<br></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row pb-5" id="tutor3">
+                    <div class="col-md-4 col-xl-3">
+                        <div class="text-center"><img class="tutor-img" src="{{ url_for('static', filename='img/tutors/head/Carlos.jpg') }}">
+                            <h5 class="tutor-name text-center">Chris Carlos<br></h5>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-8 col-xl-9">
+                        <div>
+                            <ul class="pt-4">
+                                <li>University of the Philippines Diliman BS Civil Engineering Major and Oblation Scholar (University Scholar with a 1.075 GWA)<br></li>
+                                <li>Ateneo Senior High School Graduate with First Honors&nbsp;<br></li>
+                                <li>Two-time Department of Science and Technology Youth Excellence in Science Recipient<br></li>
+                                <li>Singapore and Asians Schools Math Olympiad Silver Medalist<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-5" id="tutor4">
+                    <div class="col-md-4 col-xl-3 justify-content-xl-center">
+                        <div class="text-center"><img class="tutor-img" src="{{ url_for('static', filename='img/tutors/head/Tagupa.jpg') }}">
+                            <h5 class="tutor-name text-center">Angelika Tagupa<br></h5>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-8 col-xl-9">
+                        <div>
+                            <ul class="pt-4">
+                                <li>University of the Philippines - Diliman BS Physics Major and DOST Scholar (University Scholar)<br></li>
+                                <li>Philippine Science High School - Main Campus Senior High School Graduate and part of the Director’s List<br></li>
+                                <li>Department of Science and Technology Youth Excellence in Science Awardee (2011, 2013, 2015, 2016, 2017)<br></li>
+                                <li>9th International Mathematics Contests - Singapore Gold Medalist<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-clean testimonials-bg">
+            <div class="container">
+                <div class="intro"><span>Testimonials</span></div>
+                <div class="carousel slide" data-ride="carousel" data-interval="10000" id="carousel-t">
+                    <div class="carousel-inner d-flex align-items-center">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-10 text-center d-flex align-items-center offset-1 statement-col">
+                                    <div><i class="fas fa-quote-left d-xl-flex justify-content-xl-start"></i><span>The best thing about this program is the way my tutor explained every lesson and how considerate she was. They also adjust to the tutee’s pace in learning and although I made a lot of mistakes in answering exercises, my tutor didn’t make me feel bad about it but she explained the right way to solve them and shared some tips and techniques. </span><i class="fas fa-quote-right float-right justify-content-xl-end"></i><a class="d-flex justify-content-end" href="https://www.facebook.com/feliciaanne.ponce/posts/3217759868342154" target="_blank"><br><span style="text-decoration: underline;">See full review</span><br></a></div>
+                                </div>
+                                <div class="col-10 offset-1 rating-col">
+                                    <div class="text-center rating-grp">
+                                        <h6 class="text-muted mb-1">Felicia P.<br></h6>
+                                        <div class="rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-10 text-center d-flex align-items-center offset-1 statement-col">
+                                    <div><i class="fas fa-quote-left d-xl-flex justify-content-xl-start"></i><span>My experience with UPGrade did not only review and prepare me for college but also showed me a new and a more effective method of studying, making me like Accounting more. </span><i class="fas fa-quote-right float-right justify-content-xl-end"></i><a class="d-flex justify-content-end" href="https://www.facebook.com/gabrielamalaya.mateo/posts/3604558082910765" target="_blank"><br><span style="text-decoration: underline;">See full review</span><br></a></div>
+                                </div>
+                                <div class="col-10 offset-1 rating-col">
+                                    <div class="text-center rating-grp">
+                                        <h6 class="text-muted mb-1">Gabriela M.<br></h6>
+                                        <div class="rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-10 text-center d-flex align-items-center offset-1 statement-col">
+                                    <div><i class="fas fa-quote-left d-xl-flex justify-content-xl-start"></i><span>Through UPgrade, the most complex topics have become easy for us to understand. This, by far, is the only online class that I took which wasn't draining at all. </span><i class="fas fa-quote-right float-right justify-content-xl-end"></i><a class="d-flex justify-content-end" href="https://www.facebook.com/mira.esb/posts/3750281114986047" target="_blank"><br><span style="text-decoration: underline;">See full review</span><br></a></div>
+                                </div>
+                                <div class="col-10 offset-1 rating-col">
+                                    <div class="text-center rating-grp">
+                                        <h6 class="text-muted mb-1">Almira E.<br></h6>
+                                        <div class="rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-10 text-center d-flex align-items-center offset-1 statement-col">
+                                    <div><i class="fas fa-quote-left d-xl-flex justify-content-xl-start"></i><span>When I was in SHS, I really hated accounting because I can’t seem to grasp the concepts. This tutorial changed that. I feel like I’m starting to like accounting now because the lectures were informative and at the same time, well-structured, so it’s easy to understand. </span><i class="fas fa-quote-right float-right justify-content-xl-end"></i><a class="d-flex justify-content-end" href="https://www.facebook.com/kateashley.serna/posts/3232709950147087" target="_blank"><br><span style="text-decoration: underline;">See full review</span><br></a></div>
+                                </div>
+                                <div class="col-10 offset-1 rating-col">
+                                    <div class="text-center rating-grp">
+                                        <h6 class="text-muted mb-1">Kate S.<br></h6>
+                                        <div class="rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-10 text-center d-flex align-items-center offset-1 statement-col">
+                                    <div><i class="fas fa-quote-left d-xl-flex justify-content-xl-start"></i><span>The handouts, activities, and exercises were a great help and will be of great help in the future. I am also grateful not only for the things I have learned but also for the fact that I have gained so much encouragement and positivity considering the pressure and anxiousness college brings during this time of pandemic. </span><i class="fas fa-quote-right float-right justify-content-xl-end"></i><a class="d-flex justify-content-end" href="https://www.facebook.com/yvonne.batalla.7/posts/1514220132120200" target="_blank"><br><span style="text-decoration: underline;">See full review</span><br></a></div>
+                                </div>
+                                <div class="col-10 offset-1 rating-col">
+                                    <div class="text-center rating-grp">
+                                        <h6 class="text-muted mb-1">Yvonne B.<br></h6>
+                                        <div class="rating"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><a class="carousel-control-prev" href="#carousel-t" role="button" data-slide="prev"><i class="icon ion-android-arrow-dropleft-circle d-flex d-lg-flex justify-content-center align-items-center"></i><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-t" role="button" data-slide="next"><i class="icon ion-android-arrow-dropright-circle d-flex d-lg-flex justify-content-center align-items-center"></i><span class="sr-only">Next</span></a></div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-t" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-t" data-slide-to="1"></li>
+                        <li data-target="#carousel-t" data-slide-to="2"></li>
+                        <li data-target="#carousel-t" data-slide-to="3"></li>
+                        <li data-target="#carousel-t" data-slide-to="4"></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="section-clean packages-bg">
+            <div class="container">
+                <div class="intro"><span>Packages</span></div>
+                <h6 class="text-center">Select the box of your desired program below to know more about its package.</h6>
+                <div>
+                    <div class="row">
+                        <div class="col"><a class="card-link" href="/BasicAccounting">
+                                <div class="card package-card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Basic Accounting</h4>
+                                        <hr>
+                                        <p class="text-center">Recommended for:<br>Students taking up Business, Economics and Accountancy programs<br></p>
+                                        <div class="text-center mt-4"><span>Starts at</span>
+                                            <div class="d-xl-flex justify-content-xl-center align-items-xl-center upg-blue"><span>PHP</span><span class="price">7,500</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        <div class="col"><a class="card-link" href="/Precalculus">
+                                <div class="card package-card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Precalculus</h4>
+                                        <hr>
+                                        <p class="text-center">Recommended for:<br>Students taking up Engineering, Mathematics and Science programs<br></p>
+                                        <div class="text-center mt-4"><span>Starts at</span>
+                                            <div class="d-xl-flex justify-content-xl-center align-items-xl-center upg-blue"><span>PHP</span><span class="price">7,500</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        <div class="col"><a class="card-link" href="/Calculus">
+                                <div class="card package-card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Differential<br>Calculus</h4>
+                                        <hr>
+                                        <p class="text-center">Recommended for:<br>Students taking up Engineering, Mathematics and Science programs<br></p>
+                                        <div class="text-center mt-4"><span>Starts at</span>
+                                            <div class="d-xl-flex justify-content-xl-center align-items-xl-center upg-blue"><span>PHP</span><span class="price">7,500</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        <div class="col"><a class="card-link" href="/Physics">
+                                <div class="card package-card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Introductory Physics</h4>
+                                        <hr>
+                                        <p class="text-center">Recommended for:<br>Students taking up Engineering, Mathematics and Science programs<br></p>
+                                        <div class="text-center mt-4"><span>Starts at</span>
+                                            <div class="d-xl-flex justify-content-xl-center align-items-xl-center upg-blue"><span>PHP</span><span class="price">8,500</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    </main>
+    {% include 'footer.html' %} 
+{% endblock %} 

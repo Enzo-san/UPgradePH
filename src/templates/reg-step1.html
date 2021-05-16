@@ -1,0 +1,52 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "layout.html" %} {% block register1 %}
+
+<main class="register-page">
+    <section class="register content-block">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="container reg-container">
+                    <form method = "post" action="/Register">
+                        {{ form.csrf_token }}
+	                    {{ form.hidden_tag() }}
+                        <div class="d-flex justify-content-center"><a class="register-upgrade-logo" href="index.html"></a></div>
+                        <h4 class="text-center form-heading">Registration</h4>
+                        <div class="d-flex justify-content-between"><span class="form-sub-head">Personal Information</span><span class="text-nowrap form-sub-head">Step 1 of 3</span></div>
+                        <div class="form-row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">{{ wtf.form_field(form.name) }}</div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">{{ wtf.form_field(form.email) }}</div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">{{ wtf.form_field(form.phone_number) }}</div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">{{ wtf.form_field(form.fb_link) }}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">{{ wtf.form_field(form.address) }}</div>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">{{ wtf.form_field(form.contact_person) }}</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">{{ wtf.form_field(form.contact_person_number) }}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-dark btn-block" type="submit" style="font-family: 'Alte Haas Grotesk';">Next</a>
+                            <!-- <a class="btn btn-dark btn-block" role="button" href="/Register2" style="font-family: 'Alte Haas Grotesk';">Next</a> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% endblock %}

@@ -1,0 +1,55 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "layout.html" %} {% block register2 %}
+
+<main class="register-page">
+    <section class="register content-block">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="container reg-container">
+                    <form method = "post" action="/Register2">
+                        {{ form.csrf_token }}
+	                    {{ form.hidden_tag() }}
+                        <div class="d-flex justify-content-center"><a class="register-upgrade-logo" href="index.html"></a></div>
+                        <h4 class="text-center form-heading">Registration</h4>
+                        <div class="d-flex justify-content-between"><span class="form-sub-head"><strong>Scholastic Information</strong><br></span><span class="text-nowrap form-sub-head">Step 2 of 3</span></div>
+                        <div class="form-group"><label for="prev-school" style="font-family: 'Alte Haas Grotesk';">{{ wtf.form_field(form.previous_school) }}</div>
+                        <div class="form-group"><label for="inc-school" style="font-family: 'Alte Haas Grotesk';">{{ wtf.form_field(form.incoming_school) }}</div>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group"><label for="inc-grade-lvl" style="font-family: 'Alte Haas Grotesk';">Incoming Grade Level</label>
+                                        <!-- <optgroup label="High School">
+                                            <option value="#">Grade 7</option>
+                                            <option value="#">Grade 8</option>
+                                            <option value="#">Grade 9 </option>
+                                            <option value="#">Grade 10</option>
+                                            <option value="#">Grade 11</option>
+                                            <option value="#">Grade 12</option>
+                                        </optgroup>
+                                        <optgroup label="College">
+                                            <option value="#">1st Year College</option>
+                                            <option value="#">2nd Year College</option>
+                                            <option value="#">3rd Year College</option>
+                                        </optgroup>
+                                    </select> -->
+
+                                    <!-- {{ wtf.form_field(form.incoming_grade_level) }} -->
+                                    {{form.incoming_grade_level(class="form-control")}}
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group"><label for="course-strand" style="font-family: 'Alte Haas Grotesk';">{{ wtf.form_field(form.course) }}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-dark btn-block" type="submit" style="font-family: 'Alte Haas Grotesk';">Next</button>
+                            <!-- <a class="btn btn-dark btn-block" role="button" href="/Register2" style="font-family: 'Alte Haas Grotesk';">Next</a> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% endblock %}
