@@ -869,3 +869,15 @@ p strong {
   height: 100vh;
   margin-top: 0;
 }
+
+.home-btn {
+  color: black;
+  background-color: #e0b400;
+  border-color: #e0b400;
+  width: 240px;
+  height: 56px;
+  border-radius: 16px;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
